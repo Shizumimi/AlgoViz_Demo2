@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoViz</title>
+    <link rel="stylesheet" type="text/css" href="css/JSAV.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Bubble Sort</h1>
+    <div id="codeArea">
+        <textarea id="bubbleSortCode" >
+#include <stdio.h>
+void bubbleSort(int arr[], int n) {
+  int i, j, temp;
+  for (i = 0; i < n-1; i++) {
+    for (j = 0; j < n-i-1; j++) {
+      if (arr[j] > arr[j+1]) {
+        temp = arr[j];
+        rr[j] = arr[j+1];
+        arr[j+1] = temp;
+      }
+    }
+  }
+}
+        </textarea>
+    </br>
+        <textarea id="codeInput" >
+int main() {
+  int arr[] = {5,7,6,8,3,1};
+  int len = (int) sizeof(arr) / sizeof(*arr);
+  bubble_sort(arr, len);
+  for (int i = 0; i < len; i++){
+    printf("%d ", arr[i]);
+  }    
+  return 0;
+}
+        </textarea>
+        <button onclick="getArray()" id = "getArrayBotton">Get</button>
+    </div>
+    <div id="container">
+        <div class="jsavcontrols"></div><span class="jsavcounter"></span>
+        <p class="jsavoutput jsavline"></p>
+        <div class="jsavcanvas"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="lib/jquery.transit.js"></script>
+    <script src="lib/raphael.js"></script>
+    <script src="build/JSAV.js"></script>
+    <div id="setAuto">
+        <button onclick="setAuto()" id="setAutoBotton">Auto</button>
+        <button onclick="setPause()" id="setAutoBotton">Pause</button>
+    </div>
+
+    
+    <script src="AlgoViz_demo.js"></script>
+    
+</body>
+</html>

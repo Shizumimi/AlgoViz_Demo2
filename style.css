@@ -1,0 +1,75 @@
+h1{
+    text-align: center;   
+}
+#container {
+    width: 40%;
+    height: 60%;
+    position: relative;
+    left: 30%;
+    top : 8%;
+    white-space:nowrap;
+}
+.jsavcounter {
+    position: absolute;
+    top: 35px;
+}
+.jsavcanvas {
+    height: 300px; 
+}
+#setAuto{
+    position: relative;
+    top: 5%;
+    left: 30%;
+
+}
+#setAutoBotton{
+    background-color: #4CAF50; /* 绿色 */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+   
+}
+#getArrayBotton{
+    background-color: #4CAF50; /* 绿色 */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 96px;
+    height: 48px;
+}
+#bubbleSortCode{
+    resize: none;
+    position: relative;
+    width: 350px;
+    height: 230px;
+    white-space:nowrap;
+}
+
+#codeInput{
+    resize: none;
+    position: relative;
+    width: 350px;
+    height: 230px;
+    white-space:nowrap;
+}
+#codeArea{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 27%;
+    position: absolute;
+    white-space:nowrap;
+    top: 10%;
+}
